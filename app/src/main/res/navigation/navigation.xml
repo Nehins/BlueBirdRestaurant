@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/welcome2">
+
+    <fragment
+        android:id="@+id/welcome2"
+        android:name="com.example.bluebirdrestaurant.Welcome"
+        android:label="Welcome" >
+        <action
+            android:id="@+id/action_welcome2_to_primerPlat"
+            app:destination="@id/showprimerPlat" />
+        <action
+            android:id="@+id/action_welcome2_to_registre"
+            app:destination="@id/registre" />
+    </fragment>
+    <fragment
+        android:id="@+id/showprimerPlat"
+        android:name="com.example.bluebirdrestaurant.PrimerPlat"
+        android:label="fragment_primer_plat"
+        tools:layout="@layout/fragment_primer_plat" >
+        <action
+            android:id="@+id/action_primerPlat_to_segonPlat"
+            app:destination="@id/segonPlat" />
+    </fragment>
+    <fragment
+        android:id="@+id/segonPlat"
+        android:name="com.example.bluebirdrestaurant.SegonPlat"
+        android:label="SegonPlat" >
+        <action
+            android:id="@+id/action_segonPlat_to_postres"
+            app:destination="@id/postres" />
+    </fragment>
+    <fragment
+        android:id="@+id/postres"
+        android:name="com.example.bluebirdrestaurant.postres"
+        android:label="postres" >
+        <action
+            android:id="@+id/action_postres_to_pagament"
+            app:destination="@id/pagament" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagament"
+        android:name="com.example.bluebirdrestaurant.Pagament"
+        android:label="Pagament" />
+    <fragment
+        android:id="@+id/registre"
+        android:name="com.example.bluebirdrestaurant.registre.Registre"
+        android:label="Registre" >
+        <action
+            android:id="@+id/action_registre_to_welcome2"
+            app:destination="@id/welcome2" />
+    </fragment>
+</navigation>

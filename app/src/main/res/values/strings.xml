@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">BlueBirdRestaurant</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="primer_plat_array">
+        <item></item>
+        <item>Lentejas con Chorizo</item>
+        <item>Ensalada Mixta</item>
+        <item>Guisantes con jamon</item>
+    </string-array>
+
+    <string-array name="segon_plat_array">
+        <item></item>
+        <item>Lubina al Horno</item>
+        <item>Pimientos rellenos de Bacalao</item>
+        <item>Pluma iberica</item>
+    </string-array>
+
+    <string-array name="postre">
+        <item></item>
+        <item>Helados</item>
+        <item>Flan con nata</item>
+        <item>Pudding</item>
+    </string-array>
+</resources>

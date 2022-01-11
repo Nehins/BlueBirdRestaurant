@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PrimerPlat">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <Spinner
+            android:id="@+id/postresspinner"
+            android:layout_width="302dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="52dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="75dp"
+            android:fontFamily="serif-monospace"
+            android:text="Escull els postres"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/nextFiMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="160dp"
+            android:backgroundTint="#00FFFFFF"
+            android:text="Next"
+            android:textColor="#3F51B5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/postresspinner" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="272dp"
+            android:layout_height="281dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="189dp"
+            android:rotation="37"
+            android:src="@drawable/tumblr_mia2fsgknu1r0rh6io1_500_modified"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nextFiMenu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
