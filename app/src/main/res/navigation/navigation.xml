@@ -7,44 +7,31 @@
 
     <fragment
         android:id="@+id/welcome2"
-        android:name="com.example.bluebirdrestaurant.Welcome"
+        android:name="com.example.bluebirdrestaurant.iniciSesio.Welcome"
         android:label="Welcome" >
-        <action
-            android:id="@+id/action_welcome2_to_primerPlat"
-            app:destination="@id/showprimerPlat" />
         <action
             android:id="@+id/action_welcome2_to_registre"
             app:destination="@id/registre" />
-    </fragment>
-    <fragment
-        android:id="@+id/showprimerPlat"
-        android:name="com.example.bluebirdrestaurant.PrimerPlat"
-        android:label="fragment_primer_plat"
-        tools:layout="@layout/fragment_primer_plat" >
         <action
-            android:id="@+id/action_primerPlat_to_segonPlat"
-            app:destination="@id/segonPlat" />
+            android:id="@+id/action_welcome2_to_begudes"
+            app:destination="@id/begudes" />
     </fragment>
     <fragment
         android:id="@+id/segonPlat"
-        android:name="com.example.bluebirdrestaurant.SegonPlat"
+        android:name="com.example.bluebirdrestaurant.segonPlat.SegonPlat"
         android:label="SegonPlat" >
         <action
             android:id="@+id/action_segonPlat_to_postres"
             app:destination="@id/postres" />
     </fragment>
     <fragment
-        android:id="@+id/postres"
-        android:name="com.example.bluebirdrestaurant.postres"
-        android:label="postres" >
-        <action
-            android:id="@+id/action_postres_to_pagament"
-            app:destination="@id/pagament" />
-    </fragment>
-    <fragment
         android:id="@+id/pagament"
-        android:name="com.example.bluebirdrestaurant.Pagament"
-        android:label="Pagament" />
+        android:name="com.example.bluebirdrestaurant.pagament.Pagament"
+        android:label="Pagament" >
+        <action
+            android:id="@+id/action_pagament_to_welcome2"
+            app:destination="@id/welcome2" />
+    </fragment>
     <fragment
         android:id="@+id/registre"
         android:name="com.example.bluebirdrestaurant.registre.Registre"
@@ -53,4 +40,28 @@
             android:id="@+id/action_registre_to_welcome2"
             app:destination="@id/welcome2" />
     </fragment>
+    <fragment
+        android:id="@+id/begudes"
+        android:name="com.example.bluebirdrestaurant.primerPlat.PrimerPlat"
+        android:label="PrimerPlat" >
+        <action
+            android:id="@+id/action_begudes_to_segonPlat"
+            app:destination="@id/segonPlat" />
+    </fragment>
+    <fragment
+        android:id="@+id/postres"
+        android:name="com.example.bluebirdrestaurant.postres.postres"
+        android:label="postres" >
+        <action
+            android:id="@+id/action_postres_to_pagament"
+            app:destination="@id/pagament" />
+    </fragment>
+    <fragment
+        android:id="@+id/comandaUsuari"
+        android:name="com.example.bluebirdrestaurant.comandesUsuari.ComandaUsuari"
+        android:label="ComandaUsuari" />
+    <fragment
+        android:id="@+id/contactes"
+        android:name="com.example.bluebirdrestaurant.contactes.contactes"
+        android:label="contactes" />
 </navigation>

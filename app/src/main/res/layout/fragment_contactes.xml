@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wallpapercontactes"
+        tools:context=".contactes.contactes">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:id="@+id/telefon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="104dp"
+            android:text="973 24 24 24"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/correu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="108dp"
+            android:text="ccc@cc.com"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="350dp"
+            android:layout_height="133dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="28dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="En cas que vulguis contactar-nos ens pots truca al:"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="350dp"
+            android:layout_height="133dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="31dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="O pots enviar-nos un e-mail a través del següent correu:"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/telefon" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="243dp"
+            android:layout_height="152dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="84dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/correu"
+            app:srcCompat="@drawable/minilogo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -7,15 +7,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/pink"
-        tools:context=".PrimerPlat">
+        tools:context=".Begudes">
 
         <!-- TODO: Update blank fragment layout -->
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/postresView"
-            android:layout_width="410dp"
-            android:layout_height="246dp"
+            android:id="@+id/begudesView"
+            android:layout_width="409dp"
+            android:layout_height="265dp"
             android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
