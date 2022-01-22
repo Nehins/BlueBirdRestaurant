@@ -11,18 +11,58 @@
 
     <TextView
         android:id="@+id/comandaBeguda"
-        android:layout_width="340dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="50dp"
+        android:layout_width="224dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="32dp"
         android:text="TextView"
         android:textColor="#FBFBFB"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/comandaBeguda2"
+        android:layout_width="119dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="17dp"
+        android:text="Beguda:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/comandaBeguda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/comandaBeguda3"
+        android:layout_width="119dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="1dp"
+        android:text="Entrepa: "
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/comandaEntrepa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comandaBeguda2" />
+
+    <TextView
+        android:id="@+id/comandaBeguda4"
+        android:layout_width="119dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="2dp"
+        android:text="Postre:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/comandaPostre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comandaBeguda3" />
 
     <TextView
         android:id="@+id/comandaEntrepa"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="256dp"
+        android:layout_height="25dp"
         android:text="TextView"
         android:textColor="#FBFBFB"
         android:textSize="20sp"
@@ -31,8 +71,8 @@
 
     <TextView
         android:id="@+id/comandaPostre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="256dp"
+        android:layout_height="31dp"
         android:text="TextView"
         android:textColor="#FBFBFB"
         android:textSize="20sp"

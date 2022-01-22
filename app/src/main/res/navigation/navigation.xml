@@ -13,8 +13,8 @@
             android:id="@+id/action_welcome2_to_registre"
             app:destination="@id/registre" />
         <action
-            android:id="@+id/action_welcome2_to_begudes"
-            app:destination="@id/begudes" />
+            android:id="@+id/action_welcome2_to_inici"
+            app:destination="@id/inici" />
     </fragment>
     <fragment
         android:id="@+id/segonPlat"
@@ -64,4 +64,12 @@
         android:id="@+id/contactes"
         android:name="com.example.bluebirdrestaurant.contactes.contactes"
         android:label="contactes" />
+    <fragment
+        android:id="@+id/inici"
+        android:name="com.example.bluebirdrestaurant.inci.inici"
+        android:label="inici" >
+        <action
+            android:id="@+id/action_inici_to_begudes"
+            app:destination="@id/begudes" />
+    </fragment>
 </navigation>

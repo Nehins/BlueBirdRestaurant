@@ -43,7 +43,7 @@ class Welcome : Fragment() {
             if(vModel.comprobarUsuari(binding.emailUser.text.toString(), binding.passwordUser.text.toString())=="ok"){
 
                 pagament.setCorreu(binding.emailUser.text.toString())
-                view.findNavController().navigate(R.id.action_welcome2_to_begudes)
+                view.findNavController().navigate(R.id.action_welcome2_to_inici)
             }
 
         }
